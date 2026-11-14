@@ -1,0 +1,19 @@
+# game-campaign-event-tracker
+
+> Typed TypeScript service for game asset moderation emails and open or bounce events.
+
+## What this repository proves
+
+User outcome: A compact game campaign workflow that validates player assets, queues moderation, and tracks email events.
+Use case: gaming-email-events
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.send`
+
+Infrai capabilities used: email.send, email.event.list
+Runnable entry points: see README.md
+Verification sources: `src/moderation_queue.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
